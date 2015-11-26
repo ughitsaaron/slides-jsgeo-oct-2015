@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet" type="text/css">
+  <title>Document</title>
+  <link rel="stylesheet" href="vendor/reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="vendor/reveal.js/css/theme/solarized.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/zenburn.min.css">
+  <style>
+    .reveal pre,
+    .reveal p code {
+      border-radius: 7px;
+    }
+
+    .reveal pre code {
+      padding: 0.75rem;
+    }
+
+    .reveal code {
+      font-family: "Ubuntu Mono", monospace;
+    }
+
+    .reveal p code {
+      background-color: rgba(0,0,0,.05);
+      box-shadow: 0 0 0 1px rgba(0,0,0,.15);
+      padding: .2rem .5rem;
+      color: #cc93c1;
+    }
+  </style>
+</head>
+<body class="">
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown>
+        # Write A Title
+        ## Here Would Be Nice
+      </section>
+      <section data-markdown data-background="http://i.giphy.com/u86hs4MfqHANG.gif">
+      </section>
+    </div>
+  </div>
+  <script src="vendor/headjs/dist/1.0.0/head.min.js"></script>
+  <script src="vendor/reveal.js/js/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      controls: true,
+      progress: false,
+      history: true,
+      center: true,
+
+      transition: Reveal.getQueryHash().transition || 'slide', // default/cube/page/concave/zoom/linear/fade/none
+
+      transitionSpeed: 'fast',
+
+      theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+
+      dependencies: [{
+        src: 'vendor/reveal.js/lib/js/classList.js',
+        condition: function () {
+          return !document.body.classList;
+        }
+      }, {
+        src: 'vendor/reveal.js/plugin/markdown/marked.js',
+        condition: function () {
+          return !!document.querySelector('[data-markdown]');
+        }
+      }, {
+        src: 'vendor/reveal.js/plugin/markdown/markdown.js',
+        condition: function () {
+          return !!document.querySelector('[data-markdown]');
+        }
+      }, {
+        src: 'vendor/reveal.js/plugin/highlight/highlight.js',
+        async: true,
+        callback: function () {
+          hljs.initHighlightingOnLoad();
+        }
+      }, {
+        src: 'vendor/reveal.js/plugin/zoom-js/zoom.js',
+        async: true,
+        condition: function () {
+          return !!document.body.classList;
+        }
+      }, {
+        src: 'vendor/reveal.js/plugin/notes/notes.js',
+        async: true
+      }]
+    });
+  </script>
+</body>
+</html>
