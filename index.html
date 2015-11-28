@@ -2,12 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet" type="text/css">
-  <title>Document</title>
+  <link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+  <title>Property in Practice</title>
   <link rel="stylesheet" href="vendor/reveal.js/css/reveal.css">
-  <link rel="stylesheet" href="vendor/reveal.js/css/theme/solarized.css">
+  <link rel="stylesheet" href="vendor/reveal.js/css/theme/simple.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/zenburn.min.css">
   <style>
+    body {
+      background-color: #97BF9F;
+    }
+
+    .reveal {
+      color: #fefefe;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3 {
+      font-family: "Arimo", Helvetica, sans-serif;
+      font-weight: 700;
+      color: #fefefe;
+    }
+
+    .reveal h1 {
+      background-color: #ffdf64;
+    }
+
+    .reveal p {
+      color: #fefefe;
+      font-family: "Arimo", Helvetica, sans-serif;
+    }
+
     .reveal pre,
     .reveal p code {
       border-radius: 7px;
@@ -33,10 +58,28 @@
   <div class="reveal">
     <div class="slides">
       <section data-markdown>
-        # Write A Title
-        ## Here Would Be Nice
+          # Property in Practice
+          ## Visualizing Detroit’s Housing Crisis
       </section>
-      <section data-markdown data-background="http://i.giphy.com/u86hs4MfqHANG.gif">
+      <section data-markdown>
+        # Aaron Petcoff
+
+        Brooklyn
+
+        Web developer at New York
+
+        @ughitsaaron
+
+        hello@aaronpetcoff.me
+      </section>
+      <section data-background-image="https://antidotezine.files.wordpress.com/2014/02/urbanize2013_0810_postautomobil_c_guerrilla_futures__jasontester.jpg?w=1200"></section>
+      <section data-markdown>
+        # What’s happening:
+        - Speculation in Detroit
+        - “Property in Practice”
+        - Takeaways
+      </section>
+      <section data-markdown data-background-image="burns.gif">
       </section>
     </div>
   </div>
@@ -48,6 +91,8 @@
       progress: false,
       history: true,
       center: true,
+      width: '100%',
+      height: '100%',
 
       transition: Reveal.getQueryHash().transition || 'slide', // default/cube/page/concave/zoom/linear/fade/none
 
